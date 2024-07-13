@@ -3,7 +3,7 @@ import { Product } from '@prisma/client';
 import Link from 'next/link';
 import { Card, CardContent } from '../ui/card';
 import Image from 'next/image';
-import FavoriteToggleButton from './FavoriteToggleButton';
+import FavouriteToggleButton from './FavouriteToggleButton';
 const ProductsGrid = ({ products }: { products: Product[] }) => {
   return (
     <div className="pt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -33,7 +33,7 @@ const ProductsGrid = ({ products }: { products: Product[] }) => {
               </Card>
             </Link>
             <div className="absolute top-7 right-7 z-5">
-              <FavoriteToggleButton productId={id} />
+              <FavouriteToggleButton productId={id} />
             </div>
           </article>
         );
